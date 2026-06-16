@@ -4,18 +4,19 @@ for item , price in menu.items():
     print(f"{item}:{price}")
 
 cart=[]  
-court=0
 total=0
 
 while True:
     
-    food=(input("enter food"))
-    if food =="q".lower():
+    food=(input("enter food").lower())
+    if food =="q":
         break
-    cart.append(int(menu.get(food)))
-    court+=1
+    elif menu.get(food) is None:
+        print("商品不存在")
+    else:
+     cart.append(int(menu.get(food)))
+    
 
-for i in range(0,court,1):
-  total=total+cart[i]
+total=sum(cart)
 
 print(f"total is {total}")
