@@ -1,0 +1,6 @@
+num1=(float(input("enter 1 number")))
+num2=(float(input("enter 2 number")))
+num3=(float(input("enter 3 number")))
+print(f"{num1:>10.2f}")
+print(f"{num2:>10.2f}")
+print(f"{num3:>10.2f}")
