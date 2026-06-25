@@ -1,10 +1,10 @@
 employees = [("小明", 5), ("小華", 3), ("老王", 8), ("小麗", 4), ("大強", 7)]
 
-total=[employees[i][1] for i in range(5)]
+#total=[employees[i][1] for i in range(5)]
 
 
 
 
-salary=[2*x for x in total if x>=5]
+salary=[2*x[1] for x in employees if x[1]>=5]
 
 print(salary)
