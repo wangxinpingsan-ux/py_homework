@@ -1,8 +1,5 @@
 import random
 
-
-
-
 dice_art = {
     1: (
         "┌───────┐",
@@ -40,26 +37,23 @@ dice_art = {
         "└───────┘",
     ),
     6: (
-        "┌───────┐", # 0
-        "│ ●   ● │", # 1
-        "│ ●   ● │", # 2
-        "│ ●   ● │", # 3
-        "└───────┘", # 4
+        "┌───────┐",  # 0
+        "│ ●   ● │",  # 1
+        "│ ●   ● │",  # 2
+        "│ ●   ● │",  # 3
+        "└───────┘",  # 4
     ),
 }
 
 
-
-x=[]
-answer=[]
-howmany=int(input("幾顆骰子"))
-for i in range(0,howmany,1):
-    num=random.randint(1,6)
+x = []
+answer = []
+howmany = int(input("幾顆骰子"))
+for i in range(0, howmany, 1):
+    num = random.randint(1, 6)
     x.append(num)
-    for i in range(0,5):
-     print(dice_art.get(num)[i])
-
-
+    for i in range(0, 5):
+        print(dice_art.get(num)[i])
 
 
 print(x)
