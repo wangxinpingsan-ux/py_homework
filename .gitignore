@@ -1,0 +1,15 @@
+# Python 執行時自動產生的編譯快取（等同 C 的 .o 檔）
+__pycache__/
+*.pyc
+*.pyo
+
+# 編譯產物
+*.exe
+*.o
+*.obj
+
+# 編輯器 / 系統
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
